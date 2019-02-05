@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/file_folder_view"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:orientation="vertical"
+    android:clickable="true"
+    >
+
+    <ImageView
+        android:id="@+id/check_mark_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:maxHeight="25dp"
+        android:maxWidth="25dp"
+        android:clickable="false"
+        android:visibility="invisible"
+        android:src="@drawable/check_mark"
+        />
+    
+    <ImageView
+        android:id="@+id/file_folder_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:maxHeight="40dp"
+        android:maxWidth="40dp"
+        android:clickable="false"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/file_folder_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>

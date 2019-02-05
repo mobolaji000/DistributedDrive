@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FilesManagement</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="IMAGES">IMAGES</string>
+    <string name="MUSIC">MUSIC</string>
+    <string name="DOCS">DOCS</string>
+    <string name="DOWNLOADS">DOWNLOADS</string>
+    <string name="account_type">Vensti</string>
+</resources>
