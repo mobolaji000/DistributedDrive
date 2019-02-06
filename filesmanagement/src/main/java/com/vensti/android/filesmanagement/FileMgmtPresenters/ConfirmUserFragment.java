@@ -1,6 +1,7 @@
 package com.vensti.android.filesmanagement.FileMgmtPresenters;
 
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -16,6 +17,8 @@ import com.vensti.android.filesmanagement.FileMgmtViews.ConfirmUserView;
 public class ConfirmUserFragment extends Fragment implements FileMgmtContract.PresenterFragment {
 
     private ConfirmUserView confirmUserView;
+    private OnConfirmButtonPressedListener mCallBack;
+
 
     public ConfirmUserFragment() {
         // Required empty public constructor
@@ -39,6 +42,30 @@ public class ConfirmUserFragment extends Fragment implements FileMgmtContract.Pr
     @Override
     public FileMgmtContract.View getPresenterView() {
         return new ConfirmUserView();
+    }
+
+    public interface OnConfirmButtonPressedListener
+    {
+        void onConfirmButtonPressed();
+    }
+
+    public void onConfirmButtonPressed()
+    {
+        mCallBack.onConfirmButtonPressed();
+    }
+
+    @Override
+    public void onAttach(Context context)
+    {
+        super.onAttach(context);
+        try
+        {
+            mCallBack = (OnConfirmButtonPressedListener) context;
+        }
+        catch(ClassCastException e)
+        {
+            throw new ClassCastException(context.toString() + "must implement OnConfirmButtonPressedListener.");
+        }
     }
 
 }

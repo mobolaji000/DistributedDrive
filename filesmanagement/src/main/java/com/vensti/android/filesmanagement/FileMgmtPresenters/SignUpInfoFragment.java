@@ -65,8 +65,4 @@ public class SignUpInfoFragment extends Fragment implements FileMgmtContract.Pre
         }
     }
 
-
-
-
-
 }

@@ -41,7 +41,6 @@ public class SignUpInfoView implements FileMgmtContract.View {
                 presenter.onSignUpButtonPressed();
             }
         });
-
     }
 
 
